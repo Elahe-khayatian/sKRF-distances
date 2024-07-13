@@ -14,6 +14,6 @@ if __name__ == '__main__':
     DAG_file = open(args.inputfile)
     partitions=sKfunctions.getpartitions(DAG_file, int(args.k))
     pairwise_distances=sKfunctions.getkmuDistance(partitions)
-    with open("pairwise_distances_4newsecond", "w") as fp:
+    with open("pairwise_distances", "w") as fp:
        json.dump(pairwise_distances, fp)
        
