@@ -32,7 +32,6 @@ def getpartitions(DAGs_file, k):
           B.extend([i for i in Sorted_labels[v]] * path_count)
          P.append(sorted(B))
      P_Total.append(P)
-    print(P_Total[0])
     return(P_Total)
 
 
